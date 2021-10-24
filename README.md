@@ -1,1 +1,3 @@
-# good-food-mood
+# Good Food Mood
+
+Project Exam Resit 1
