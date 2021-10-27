@@ -1,2 +1,6 @@
-@import "./1-base/variables.scss";
-@import "./1-base/global.scss";
+@import "1-base/variables";
+@import "1-base/global";
+@import "2-components/tags";
+@import "2-components/details";
+@import "2-components/form";
+@import "2-components/btn";

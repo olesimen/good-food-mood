@@ -1,12 +1,14 @@
 :root {
+    /* ------ colors ------- */
     --bg: hsl(0, 0%, 100%);
     --primary: hsl(150, 5%, 38%);
     --accent: hsl(153, 22%, 47%);
     --subdued: hsl(155, 46%, 93%);
+    --error: hsl(8, 59%, 48%);
 
     /* ------ font-families ------- */
     --ff-primary: "Nunito", sans-serif;
-    --ff-heading:font-family: 'Noto Serif Display', serif;
+    --ff-heading: "Noto Serif Display", serif;
 
     /* ------ font-weights ------ */
     --fw-r: 400;

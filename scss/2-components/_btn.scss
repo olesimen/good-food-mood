@@ -1,0 +1,14 @@
+.btn {
+    background: none;
+    outline: none;
+    border: 1px solid var(--accent);
+    border-radius: 0.1rem;
+    color: var(--accent);
+    padding: 1rem;
+    transition: background-color 150ms;
+
+    &:hover,
+    &:focus {
+        background-color: var(--subdued);
+    }
+}

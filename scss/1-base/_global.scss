@@ -21,16 +21,29 @@ body {
     scroll-behavior: smooth;
 }
 
-// a {
-//     color: var(--secondary);
-// }
+h1,
+h2,
+h3 {
+    color: var(--accent);
+}
 
-// a:hover {
-//     color: var(--primary);
-// }
+// Usually custom styles are wanted
+ul,
+ol,
+dl,
+li,
+dd,
+dt {
+    margin: 0;
+    padding: 0;
+}
 
-main p {
-    color: var(--secondary);
-    max-width: 720px;
-    margin: 1rem auto 2rem;
+.image {
+    &--full-width {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 3/2;
+    }
 }

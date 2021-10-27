@@ -1,0 +1,94 @@
+.recipe-article {
+    padding: 0.8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (min-width: 40em) {
+        padding: 2rem;
+    }
+
+    &__name {
+        font-family: var(--ff-heading);
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        border-block: 0.1rem solid var(--subdued);
+        padding: 2rem 0;
+    }
+
+    &__meta-list {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2rem;
+        border-block-end: 0.1rem solid var(--subdued);
+    }
+
+    &__meta-container {
+        display: flex;
+    }
+
+    &__meta-icon {
+        color: var(--accent);
+    }
+
+    &__meta-name {
+        // Visually hidden class by Scott O'Hara
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    &__meta-value {
+        padding-left: 0.5rem;
+    }
+
+    main {
+        @media (min-width: 60em) {
+            display: grid;
+            grid-template-columns: 3fr minmax(2rem, 1fr) 9fr;
+            grid-template-rows: auto repeat(1fr);
+            grid-template-areas: "ingredients . directions";
+        }
+    }
+}
+
+.ingredients__title,
+.directions__title {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.ingredients {
+    grid-area: ingredients;
+    position: sticky;
+
+    &__list {
+        list-style: none;
+    }
+    &__quantity {
+        font-weight: var(--fw-b);
+    }
+}
+
+.directions {
+    grid-area: directions;
+    max-width: 36em;
+
+    &__list {
+        margin-left: 1rem;
+    }
+
+    &__list-item {
+        margin-bottom: 1rem;
+
+        &::marker {
+            color: var(--accent);
+        }
+    }
+}

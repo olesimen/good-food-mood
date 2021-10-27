@@ -1,0 +1,14 @@
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 2rem 0;
+    gap: 1rem;
+
+    &__item {
+        background-color: var(--subdued);
+        padding: 0.3rem 1rem;
+        border-radius: 2rem;
+        color: var(--accent);
+    }
+}
