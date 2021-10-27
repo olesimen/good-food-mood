@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@700&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- SEO -->
+    <meta name="creator" content="Good Food Mood">
+    <meta name="author" content="Good Food Mood Community">
+    <meta name="description" content="Contact Good Food Mood">
+    <meta name="keywords"
+        content="Healthy, gluten-free, low-carb, dairy-free, pescatarian, vegan, vegetarian, contact, get in touch">
+    <title>Contact &vert; Good Food Mood</title>
+</head>
+
+<body>
+    <article class="recipe-article">
+        <form class="form" autocomplete="on" id="contactForm">
+            <div class="form__field">
+                <label for="firstName" class="form__label">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="John" class="form__input" />
+                <span id="firstNameError" class="form__error" aria-live="polite">firstNameError</span>
+            </div>
+
+            <div class="form__field">
+                <label for="lastName" class="form__label">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Doe" class="form__input" />
+                <span id="lastNameError" class="form__error" aria-live="polite">firstNameError</span>
+            </div>
+
+            <div class="form__field">
+                <label for="email" class="form__label">Email</label>
+                <input type="email" name="email" id="email" placeholder="email@domain.com" class="form__input" />
+                <span id="emailError" class="form__error" aria-live="polite">firstNameError</span>
+                <span id="invalidEmailError" class="form__error" aria-live="polite">firstNameError</span>
+            </div>
+
+            <div class="form__field">
+                <label for="message" class="form__label">Message</label>
+                <textarea type="text" name="message" id="message" placeholder="Your message goes here"
+                    class="form__input form__input--message"></textarea>
+                <span id="messageError" class="form__error" aria-live="polite">firstNameError</span>
+            </div>
+
+            <span id="formMessage" class="form__message" aria-live="polite">firstNameError</span>
+            <button type="submit" class="btn form__button" id="submit">
+                Send message
+            </button>
+
+        </form>
+    </article>
+    <script src="js/contact.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.form {
+    max-width: 600px;
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        margin-block-end: 2rem;
+    }
+
+    &__label {
+        margin-block-end: 0.5rem;
+        font-weight: var(--fw-b);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__input {
+        padding: 0.8rem;
+        border: 0.05rem solid #86998f;
+        border-radius: 0.1rem;
+
+        &::placeholder {
+            opacity: 0.5;
+        }
+
+        &:active,
+        &:focus {
+            outline: none;
+            border-left: 0.5rem solid var(--accent);
+        }
+    }
+
+    &__error,
+    &__message {
+        display: none;
+    }
+
+    &__error {
+        padding: 0.5rem 0;
+        color: var(--error);
+    }
+}
